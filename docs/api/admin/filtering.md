@@ -36,17 +36,17 @@ You can search through a list of entities in Verbis with the following operators
 
 This example demonstrates how to search through posts with a title that iS `LIKE` `verbis`.
 
-`/posts&filter={"title":[{"operator":"LIKE", "value":"verbis"}]}`
+`/posts?filter={"title":[{"operator":"LIKE", "value":"verbis"}]}`
 
 **Filter through posts by title and page template**
 
 This example demonstrates how to search through posts with a title that is `LIKE` `verbis` OR if the post has a page
 template `LIKE` `archive`.
 
-`/posts&filter={"title":[{"operator":"LIKE", "value":"verbis"}], "page_template":[{"operator":"LIKE", "value":"archive"}]}`
+`/posts?filter={"title":[{"operator":"LIKE", "value":"verbis"}], "page_template":[{"operator":"LIKE", "value":"archive"}]}`
 
 **Filter through posts with and conditional**
 
 This example demonstrates how to search through posts with a slug that is `LIKE` `verbis` AND `LIKE` `cms`.
 
-`/posts&filter={"slug":[{"operator":"LIKE", "value":"verbis"},{"operator":"LIKE", "value":"cms"}]}`
+`/posts?filter={"slug":[{"operator":"LIKE", "value":"verbis"},{"operator":"LIKE", "value":"cms"}]}`
